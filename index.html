@@ -23,7 +23,46 @@
 
   <div class="caseFile"><button type="caseFile"><a href="https://imgur.com/R2snqZ5"><img src="https://i.imgur.com/R2snqZ5.png" title="source: imgur.com" /></a></button></div>
 
-  <div class="investigate"><button type="investigate"><a href="https://imgur.com/ddoMtpe"><img src="https://i.imgur.com/ddoMtpe.png" title="source: imgur.com" /></a></button></div>
+
+
+
   
+
+  <button onclick="myFunction()"><a href="https://imgur.com/ddoMtpe"><img src="https://i.imgur.com/ddoMtpe.png" title="source: imgur.com" /></a></button>
+ 
+  <p id="demo"></p>
+  
+  <script>
+  
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "Investigator XYZ");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+  </script>
+
+
+
+
+   <!-- Trigger/Open The Modal
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div> -->
+
+</div>
+
+
   </body>
 </html>

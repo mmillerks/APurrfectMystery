@@ -19,26 +19,21 @@
 }
 .investigator {
   background-color: gold;
-  border-left: white 2px;
+  margin-left: 2cm;
   grid-column: 4 / 5;
   grid-row: 2 / 5;
 }
 .caseFile {
   background-color: white;
   grid-column: 1 / 2;
-  width: 7in;
+  width: 3in;
   height: 1in;
   padding: 1cm;
 
 }
 .investigate {
-  background-image: url("https://imgur.com/ddoMtpe");
-  background-size: cover;
-  width: 7in;
+  width: 3in;
   height: 1in;
-  font-size: 24px;
-  background-position: center;
-  background-repeat: none;
   grid-column: 2 / 3;
   padding: 1cm;
 }
@@ -62,21 +57,23 @@
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 40px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 70%; /* Could be more or less, depending on screen size */
+  text-align: center;
 }
 
 .modal-header {
   background-color: black;
-  font-size: 24px;
+  color: white;
+  margin-right: 30px;
 }
 
 /* The Close Button */
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 48px;
   font-weight: bold;
 }
 
@@ -85,4 +82,78 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+#myProgress {
+  width: 3in;
+  background-color: lightgray;
+  margin: auto;
+}
+
+#myBar {
+  width: 3in;
+  height: 30px;
+  background-color: gold;
+}
+
+#catLives {
+  width: 3in;
+  background-color: lightgray;
+  margin:auto;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Page content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: gold;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+.storyBoard {
+ grid-column-start: 2;
+ size: 50%;
 }

@@ -7,6 +7,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(100px, auto);
+  
+}
+
+#body2 {
+  background-image: url("./assets/background.png");
+  background-size: cover;
 }
 .header {
   justify-content: center;
@@ -85,19 +91,18 @@
 }
 
 #myProgress {
-  width: 3in;
+  width: 350px;
   background-color: lightgray;
   margin: auto;
 }
 
 #myBar {
-  width: 3in;
-  height: 30px;
-  background-color: gold;
+width: 3in;
+background-color: gold;
 }
 
 #catLives {
-  width: 3in;
+  width: 350px;
   background-color: lightgray;
   margin:auto;
 }
@@ -105,12 +110,12 @@
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 400px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: grey;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -127,15 +132,15 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
+/* When you mouse over the navigation links, change their color
 .sidenav a:hover {
   color: gold;
-}
+} */
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
@@ -152,8 +157,25 @@
   padding: 20px;
 }
 
+#welcome {
+  text-align: center;
+}
 
-.storyBoard {
- grid-column-start: 2;
- size: 50%;
+#inputButton { 
+ 
+}
+
+#restart {
+  text-align: center;
+  color: black;
+}
+
+#begin {
+  background:none;
+  width: 350px;
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

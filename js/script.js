@@ -18,12 +18,9 @@ class Detective {
 //   alert("Read this case file.");
 // });
 
-
-
-
-const play = document.getElementById("investigate");
+const play = document.getElementById("begin");
 play.addEventListener('click', (evt) => {
-  prompt("Please enter your investigator name:", "Investigator XYZ");
+  alert("Let's play!");
 });
 
 
@@ -52,6 +49,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
 
 const i = 0;
 function move() {

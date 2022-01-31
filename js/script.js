@@ -13,29 +13,20 @@ class Detective {
     }
 }
 
-// const file = document.getElementById("caseFile1");
-// file.addEventListener("click", (evt) => {
-//   alert("Read this case file.");
-// });
-
-const play = document.getElementById("begin");
-play.addEventListener('click', (evt) => {
-  alert("Let's play!");
-});
-
-
-// Get the modal
+// Get the modal for the case file
 const modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+// Get the button that opens the modal - case file
 const btn = document.getElementById("caseFile1");
 
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+if (btn) {
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -50,45 +41,56 @@ window.onclick = function(event) {
   }
 }
 
+const images = ["./assests/c1.png", "./assets/c2.png"];
+let i = 0;
 
-
-
-const i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    let elem = document.getElementById("myBar");
-    let width = 1;
-    let id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
+function goNext() {
+  if (i < 2) {
+    const image = document.getElementById("dynamicImage");
+    image.src = images[i]; 
+    i++;
   }
 }
 
-const i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    let elem = document.getElementById("catLives");
-    let width = 1;
-    let id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
-  }
-}
+const nextButton =  document.getElementById("begin");
+
+nextButton.onclick = goNext;
+
+// const i = 0;
+// function move() {
+//   if (i == 0) {
+//     i = 1;
+//     let elem = document.getElementById("myBar");
+//     let width = 1;
+//     let id = setInterval(frame, 10);
+//     function frame() {
+//       if (width >= 100) {
+//         clearInterval(id);
+//         i = 0;
+//       } else {
+//         width++;
+//         elem.style.width = width + "%";
+//         elem.innerHTML = width + "%";
+//       }
+//     }
+//   }
+// }
+
+// const i = 0;
+// function move() {
+//   if (i == 0) {
+//     i = 1;
+//     let elem = document.getElementById("catLives");
+//     let width = 1;
+//     let id = setInterval(frame, 10);
+//     function frame() {
+//       if (width >= 100) {
+//         clearInterval(id);
+//         i = 0;
+//       } else {
+//         width++;
+//         elem.style.width = width + "%";
+//         elem.innerHTML = width + "%";
+//       }
+//     }
+//   }

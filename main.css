@@ -35,7 +35,6 @@
   width: 3in;
   height: 1in;
   padding: 1cm;
-
 }
 .investigate {
   width: 3in;
@@ -92,8 +91,14 @@
 
 #myProgress {
   width: 350px;
-  background-color: lightgray;
+  background-color: white;
   margin: auto;
+}
+
+#catLives {
+  width: 350px;
+  background-color: white;
+  margin:auto;
 }
 
 #myBar {
@@ -101,12 +106,10 @@ width: 3in;
 background-color: gold;
 }
 
-#catLives {
-  width: 350px;
-  background-color: lightgray;
-  margin:auto;
+#myCatBar {
+  width: 3in;
+  background-color: gold;
 }
-
 
 .sidenav {
   height: 100%;
@@ -125,8 +128,6 @@ background-color: gold;
   margin-left: 200px; /* Same as the width of the sidenav */
 }
 
-
-
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -137,11 +138,6 @@ background-color: gold;
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color
-.sidenav a:hover {
-  color: gold;
-} */
-
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
@@ -151,7 +147,6 @@ background-color: gold;
   margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
   padding: 20px;
@@ -161,13 +156,9 @@ background-color: gold;
   text-align: center;
 }
 
-#inputButton { 
- 
-}
-
 #restart {
   text-align: center;
-  color: black;
+  background-color: grey;
 }
 
 #begin {
@@ -201,7 +192,6 @@ background-color: gold;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 #stay {
@@ -219,7 +209,6 @@ background-color: gold;
  margin-left: 450px;
  border: white .25in;
 }
-
 #clue2 {
  width: 950px;
  height: auto;
@@ -265,8 +254,9 @@ background-color: gold;
    background-color: gold;
    font-size: 24px;
    border: none;
-   width: 800px;
+   width: 680px;
    height: auto;
    padding: 20px;
-   margin-left: 550px;
+   margin-left: 600px;
+   margin-top: 20px;
  }

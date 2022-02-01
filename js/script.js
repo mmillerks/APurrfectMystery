@@ -161,7 +161,7 @@ const choiceA = document.getElementById("choice1");
       }
      }
      const choiceL = document.getElementById("choice12");
-    if (choiceH) {
+     if (choiceH) {
       choiceH.onclick = function() {
         player.rating++;
         player.updateProgress();
@@ -169,6 +169,20 @@ const choiceA = document.getElementById("choice1");
         sherlock.updateCatProgress();
       }
      }
+
+     const level  = document.getElementById("outcome")
+     if (level) {
+       level.onclick = function() {
+         console.log("Status");
+       }
+     }
+
+
+
+
+
+
+
 
 
 
@@ -189,50 +203,3 @@ const choiceA = document.getElementById("choice1");
 // nextButton.onclick = goNext;
 
 
-
-// const i = 0;
-// function move() {
-//   if (i == 0) {
-//     i = 1;
-//     let elem = document.getElementById("myBar");
-//     let width = 1;
-//     let id = setInterval(frame, 10);
-//     function frame() {
-//       if (width >= 100) {
-//         clearInterval(id);
-//         i = 0;
-//       } else {
-//         width++;
-//         elem.style.width = width + "%";
-//         elem.innerHTML = width + "%";
-//       }
-//     }
-//   }
-// }
-
-// const i = 0;
-// function move() {
-//   if (i == 0) {
-//     i = 1;
-//     let elem = document.getElementById("catLives");
-//     let width = 1;
-//     let id = setInterval(frame, 10);
-//     function frame() {
-//       if (width >= 100) {
-//         clearInterval(id);
-//         i = 0;
-//       } else {
-//         width++;
-//         elem.style.width = width + "%";
-//         elem.innerHTML = width + "%";
-//       }
-//     }
-//   }
-
-
-
-// const width = player.rating/6*100;
-
-// let elem = document.getElementById("myBar");
-// elem.style.width = width + "%";
-// elem.innerHTML = width + "%";

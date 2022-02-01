@@ -1,3 +1,5 @@
+
+//PLAYER CLASSES
 class Investigator {
     constructor (rating) {
       this.rating = rating;
@@ -16,9 +18,11 @@ class Investigator {
     }
     updateCatProgress() {
       const catWidth =this.lives/9*100;
-      let update = document.getElementById("myCatBar");
-      update.style.width = catWidth + "%";
-      update.innerHTML = catWidth + "%";
+      let update = document.getElementById("myCatBar"); 
+      if (update) {
+        update.style.width = catWidth + "%";
+        update.innerHTML = catWidth + "%";
+      }
     }
 }
 
@@ -29,6 +33,16 @@ const sherlock = new Cat(9);
 sherlock.updateCatProgress();
 
 
+//OUTCOME ALERT
+const statusBtn = document.getElementById("outcome");
+
+statusBtn.onclick = function () {
+  const alertMsg = "Sherlock was found sleeping in a box in the file room!" + "\n" + "\n" + "Your Investigator Status Level: " + player.rating + "\n" + "Levels: 1=Novice 2=Junior 3=Senior 4=Legend" + "\n" + "\n" + "After your investigation Sherlock has " + sherlock.lives + " remaining Cat Lives.";
+  alert(alertMsg); 
+}
+
+
+//CASE FILE MODAL
 // Get the modal for the case file
 const modal = document.getElementById("myModal");
 
@@ -58,6 +72,7 @@ window.onclick = function(event) {
 }
 
 
+//CHOICES THAT UPDATE STATUS AND LIVES
 const choiceA = document.getElementById("choice1");
  if (choiceA) {
    choiceA.onclick = function() {
@@ -72,7 +87,6 @@ const choiceA = document.getElementById("choice1");
     choiceB.onclick = function() {
       player.rating++;
       player.updateProgress();
-      sherlock.lives--;
       sherlock.updateCatProgress();
     }
    }
@@ -80,7 +94,6 @@ const choiceA = document.getElementById("choice1");
    const choiceC = document.getElementById("choice3");
    if (choiceC) {
      choiceC.onclick = function() {
-       player.rating++;
        player.updateProgress();
        sherlock.lives--;
        sherlock.updateCatProgress();
@@ -92,7 +105,6 @@ const choiceA = document.getElementById("choice1");
      choiceD.onclick = function() {
        player.rating++;
        player.updateProgress();
-       sherlock.lives--;
        sherlock.updateCatProgress();
      }
     }
@@ -100,7 +112,6 @@ const choiceA = document.getElementById("choice1");
     const choiceE = document.getElementById("choice5");
     if (choiceE) {
       choiceE.onclick = function() {
-        player.rating++;
         player.updateProgress();
         sherlock.lives--;
         sherlock.updateCatProgress();
@@ -111,7 +122,6 @@ const choiceA = document.getElementById("choice1");
      choiceF.onclick = function() {
        player.rating++;
        player.updateProgress();
-       sherlock.lives--;
        sherlock.updateCatProgress();
      }
     }
@@ -120,14 +130,12 @@ const choiceA = document.getElementById("choice1");
      choiceG.onclick = function() {
        player.rating++;
        player.updateProgress();
-       sherlock.lives--;
        sherlock.updateCatProgress();
      }
     }
     const choiceH = document.getElementById("choice8");
     if (choiceH) {
       choiceH.onclick = function() {
-        player.rating++;
         player.updateProgress();
         sherlock.lives--;
         sherlock.updateCatProgress();
@@ -136,7 +144,6 @@ const choiceA = document.getElementById("choice1");
      const choiceI = document.getElementById("choice9");
      if (choiceI) {
        choiceI.onclick = function() {
-         player.rating++;
          player.updateProgress();
          sherlock.lives--;
          sherlock.updateCatProgress();
@@ -147,14 +154,12 @@ const choiceA = document.getElementById("choice1");
       choiceI.onclick = function() {
         player.rating++;
         player.updateProgress();
-        sherlock.lives--;
         sherlock.updateCatProgress();
       }
      }
      const choiceK = document.getElementById("choice11");
      if (choiceK) {
       choiceK.onclick = function() {
-        player.rating++;
         player.updateProgress();
         sherlock.lives--;
         sherlock.updateCatProgress();
@@ -165,11 +170,9 @@ const choiceA = document.getElementById("choice1");
       choiceH.onclick = function() {
         player.rating++;
         player.updateProgress();
-        sherlock.lives--;
         sherlock.updateCatProgress();
       }
      }
-
      const level  = document.getElementById("outcome")
      if (level) {
        level.onclick = function() {
@@ -182,11 +185,38 @@ const choiceA = document.getElementById("choice1");
 
 
 
+// //STATUS MODAL
+// // Get the modal for the status
+// const statusModal = document.getElementById("statusModal");
+
+// // Get the button that opens the modal - 
+// const statusBtn = document.getElementById("outcome");
+
+// // Get the <span> element that closes the modal
+// const span = document.getElementsByClassName("close")[0];
+
+// // When the user clicks on the button, open the modal
+// if (btn) {
+//   btn.onclick = function() {
+//     modal.style.display = "block";
+//   }
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 
 
 
-
-
+// ROTATING IMAGE CODE - SAVE THIS TO USE FOR UPDATE
 // const images = ["./assests/c1.png", "./assets/c2.png"];
 // let i = 0;
 

@@ -174,8 +174,9 @@ background-color: gold;
   background: whitesmoke;
   border:none;
   width: 350px;
+  height: 85px;
   float: none;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -186,10 +187,86 @@ background-color: gold;
   width: 350px;
 }
 
-
 #dynamicImage {
- width: 700px;
+ width: 950px;
  height: auto;
  padding: 20px;
  margin-left: 450px;
+ border: white .25in;
 }
+
+#newClue {
+  background: whitesmoke;
+  width: 350px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#stay {
+  background: whitesmoke;
+  width: 350px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#clue1 {
+ width: 950px;
+ height: auto;
+ padding: 20px;
+ margin-left: 450px;
+ border: white .25in;
+}
+
+#clue2 {
+ width: 950px;
+ height: auto;
+ padding: 20px;
+ margin-left: 450px;
+ border: white .25in;
+}
+#clue3 {
+  width: 950px;
+  height: auto;
+  padding: 20px;
+  margin-left: 450px;
+  border: white .25in;
+ }
+ #clue4 {
+  width: 950px;
+  height: auto;
+  padding: 20px;
+  margin-left: 450px;
+  border: white .25in;
+ }
+ #clue5 {
+  width: 950px;
+  height: auto;
+  padding: 20px;
+  margin-left: 450px;
+  border: white .25in;
+ }
+ #clue6 {
+  width: 950px;
+  height: auto;
+  padding: 20px;
+  margin-left: 450px;
+  border: white .25in;
+ }
+
+ .choices {
+  margin-left: 500px;
+  width: 900px;
+ }
+
+ #outcome {
+   background-color: gold;
+   font-size: 24px;
+   border: none;
+   width: 800px;
+   height: auto;
+   padding: 20px;
+   margin-left: 550px;
+ }
